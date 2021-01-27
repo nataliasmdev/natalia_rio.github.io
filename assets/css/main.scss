@@ -1,12 +1,13 @@
 ---
 ---
 
-/*
-Theme Name: La Rue d'Auseil template
-Description: Custom Jekyll template
-Author: Natalia Rio
-Author URI: https://www.linkedin.com/in/natalia-sm/
-Tags: Jekyll, Website, Blog, Auseil
-*/
+// === BASE === //
 
 @import "base";
+@import "base/colors";
+
+@import "components";
+@import "layout";
+@import "layout/header";
+
+@import "utilities/visibility";

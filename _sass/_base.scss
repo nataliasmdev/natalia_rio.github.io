@@ -4,38 +4,11 @@
 $font-weight-normal: 400;
 $font-weight-bold: 600;
 
-
-// === Colors === //
-$color-main: #b10000;
-$color-second: #ee6e04;
-$color-off: #F2F2F2;
-$color-black: darken($color-off, 75%);
-// Categories
-$color-category-design: #816793;
-
 // === Resets === //
 html {
 	scroll-behavior: smooth;
 }
 body {
 	font-family: "Montserrat", sans-serif;
-	color: $color-black;
 	margin: 0;
-}
-
-
-// === TODO === //
-main {
-	display: flex;
-	height: 100vh;
-    margin: 0 auto;
-    max-width: 1920px;
-}
-
-.category {
-	width: 25%;
-
-	&:not(:last-child) {
-		border-right: solid black 1px;
-	}
 }

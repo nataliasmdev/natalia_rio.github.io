@@ -1,0 +1,14 @@
+.visible {
+	visibility: visible;
+}
+.invisible {
+	visibility: hidden;
+}
+.hidden {
+	display: none;
+}
+
+// === Mixins === //
+@mixin invisible($visibility) {
+  visibility: $visibility !important;
+}

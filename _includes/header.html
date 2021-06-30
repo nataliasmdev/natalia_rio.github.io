@@ -1,0 +1,11 @@
+<header class="w-100">
+    <div class="row h-100">
+        {% for link in site.data.navigation %}
+        <div class="header__option col-3 {% if page.url != '/' and page.url != link.url %}hidden{% endif %}">
+            <a href="{{ link.url }}">
+                <h2 class="h-100 w-100">{{ link.title }}</h2>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</header>

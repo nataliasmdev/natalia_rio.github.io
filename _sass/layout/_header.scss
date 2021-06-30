@@ -1,4 +1,15 @@
 header {
 	height: 100vh;
-	display: flex;
+
+	.header__option {
+		transition: background-color ease .8s;
+
+		&:not(:last-child) {
+			border-right: solid #fff 1px;
+		}
+
+		&:hover {
+			background-color: rgba(100,103,96,0.6);
+		}
+	}
 }

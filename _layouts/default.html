@@ -12,22 +12,7 @@
 </head>
 <body>
 	<div class="container">
-		<header>
-			<div class="category {% if page.url != '/' and page.url != '/about-me' %}hidden{% endif %}">
-				<a href="about-me">
-					<h2 class="category__title">About me</h2>
-				</a>
-			</div>
-			<div class="category {% if page.url != '/' and page.url != '/portfolio' %}hidden{% endif %}">
-				<h2 class="category__title">Portfolio</h2>
-			</div>
-			<div class="category {% if page.url != '/' and page.url != '/blog' %}hidden{% endif %}">
-				<h2 class="category__title">Blog</h2>
-			</div>
-			<div class="category {% if page.url != '/' and page.url != '/contact' %}hidden{% endif %}">
-				<h2 class="category__title">Contact</h2>
-			</div>
-		</header>
+		{% include header.html %}
 		<main class="hidden">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

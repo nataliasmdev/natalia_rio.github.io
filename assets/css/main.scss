@@ -1,5 +1,9 @@
 ---
 ---
 
-@import "base";
+@import "variables";
+@import "bootstrapVariables";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "base";
+@import "modules";

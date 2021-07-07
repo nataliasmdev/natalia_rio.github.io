@@ -1,3 +1,15 @@
+// === Colors === //
+$color-main: #AB4E1D;
+$color-main-darker: #A41906;
+
+$color-secondary: #A88A49;
+$color-secondary-darker: #603127;
+
+$color-white: #eceae3;
+
+$color_body: lighten($color-white, 8%);
+
+// === Fonts === //
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Poppins:wght@300;500&display=swap');
 
 $font-family_title: "Lora", serif;

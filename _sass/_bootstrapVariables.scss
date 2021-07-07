@@ -4,7 +4,11 @@ $font-weight-base: $font-weight_body-normal;
 $font-weight-bold: $font-weight_body-bold;
 
 // === Navbar === //
+// Padding
+$navbar-padding-x: 0;
+$navbar-padding-y: 0;
 // Items padding
 $navbar-nav-link-padding-x: 2rem;
+$nav-link-padding-y: 1.5rem;
 // Logo margin
 $navbar-brand-margin-end: 5rem;

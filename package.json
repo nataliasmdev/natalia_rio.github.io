@@ -1,0 +1,18 @@
+{
+  "name": "natalia-rio.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natalia-rio/natalia-rio.github.io.git"
+  },
+  "author": "Natalia Rio",
+  "license": "CC BY-NC-ND 4.0",
+  "bugs": {
+    "url": "https://github.com/natalia-rio/natalia-rio.github.io/issues"
+  },
+  "homepage": "https://github.com/natalia-rio/natalia-rio.github.io",
+  "dependencies": {
+    "bootstrap": "^5.0.2"
+  }
+}

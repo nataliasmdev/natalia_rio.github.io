@@ -13,6 +13,8 @@ plugins:
 
 sass:
   style: compressed
+  load_paths:
+    - css
 
 defaults:
 - scope:
@@ -23,6 +25,11 @@ defaults:
     path: "_pages"
   values:
     permalink: /:basename
+- scope:
+    path: "_posts"
+  values:
+    permalink: /blog/:slug
+    layout:     "post"
 
 include:
   - _pages

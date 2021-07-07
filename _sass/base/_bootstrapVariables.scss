@@ -1,0 +1,10 @@
+// === Fonts === //
+$font-family-base: $font-family_body, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-weight-base: $font-weight_body-normal;
+$font-weight-bold: $font-weight_body-bold;
+
+// === Navbar === //
+// Items padding
+$navbar-nav-link-padding-x: 2rem;
+// Logo margin
+$navbar-brand-margin-end: 5rem;

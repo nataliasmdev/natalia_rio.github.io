@@ -1,5 +1,4 @@
-// === Typography === //
-@import url('https://fonts.googleapis.com/css2?family=Karma:wght@400;600&family=Montserrat:wght@400;600&display=swap');
-
-$font-weight-normal: 400;
-$font-weight-bold: 600;
+// === Titles === //
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family_title;
+}

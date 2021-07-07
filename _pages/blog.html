@@ -1,13 +1,12 @@
 ---
 title: Blog
-custom_css: blog
 ---
 
 <h1 class="title_main text-center mb-5">Blog</h1>
 
 {% for post in site.posts %}
 <div class="col-sm-4">
-    <img src="{{ BASE_PATH }}/assets/images/{{ post.banner | prepend: site.baseurl }}" alt="Post banner" class="img-fluid"/>
+    <img src="{{ site.url }}/assets/images/{{ post.previewBanner }}" alt="Post banner" class="img-fluid"/>
     <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
 </div>
 <li>

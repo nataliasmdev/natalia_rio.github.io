@@ -1,4 +1,4 @@
 .jekyll-cache
 .idea
 _site/
-node_modules/*
+node_modules/

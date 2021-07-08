@@ -1,6 +1,4 @@
 .jekyll-cache
 .idea
 _site/
-node_modules/*
-!node_modules/bootstrap/scss
-!node_modules/bootstrap/package.json
+node_modules/

@@ -1,10 +1,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Natalia Rio - {{ page.title | default: site.title }}</title>
 
-<link rel="stylesheet" href="{{ site.url }}/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/main.css">
 
 {% if page.custom_css %}
     {% for stylesheet in page.custom_css %}
-        <link rel="stylesheet" href="{{ site.url }}/assets/css/{{ stylesheet }}.css">
+        <link rel="stylesheet" href="/assets/css/{{ stylesheet }}.css">
+    {% endfor %}
+{% endif %}
+
+{% if layout.custom_css %}
+    {% for stylesheet in layout.custom_css %}
+        <link rel="stylesheet" href="/assets/css/{{ stylesheet }}.css">
     {% endfor %}
 {% endif %}

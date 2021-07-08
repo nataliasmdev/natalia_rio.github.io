@@ -2,12 +2,16 @@
   background: linear-gradient(90deg, $color_body 0 50%, $color-white 50% 100%) !important;
 }
 
-.navbar-brand {
-  background-color: $color_body;
-}
-
 .navbar-collapse {
   background-color: $color-white;
+  position: relative;
+
+  .navbar-brand {
+    position: absolute;
+    left: 0;
+    transform: translate(-100%, 0);
+    padding-right: 3rem;
+  }
 }
 
 .navbar-light .navbar-nav .nav-link {

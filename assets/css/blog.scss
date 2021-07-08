@@ -1,0 +1,43 @@
+---
+---
+
+@import "variables";
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.blogPost {
+  &__image {
+    position: relative;
+    &:after {
+      $spacing: 5px;
+      content: "";
+      border: solid $color-white 1px;
+      display: block;
+      margin: $spacing;
+      left: 0;
+      top: 0;
+      position: absolute;
+      width: calc(100% - #{$spacing} * 2);
+      height: calc(100% - #{$spacing} * 2);
+      transition: all .3s ease;
+      opacity: .5;
+    }
+
+    img {
+      filter: brightness(0.9);
+      transition: all .3s ease;
+    }
+  }
+
+  &:hover &__image:after {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+  }
+  &:hover img {
+    filter: brightness(1);
+  }
+}

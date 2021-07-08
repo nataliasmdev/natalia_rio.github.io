@@ -14,27 +14,10 @@
   }
 }
 
-.navbar-light .navbar-nav .nav-link {
-  & > span {
-    position: relative;
-  }
+.navbar-light .navbar-nav .nav-item:hover {
+  background-color: rgba($color-main, 0.1);
+}
 
-  & > span:after {
-    content: "";
-    height: 0.5rem;
-    width: 100%;
-    background-color: rgba($color-main, 0.1);
-    display: block;
-    position: absolute;
-    opacity: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    bottom: 0;
-  }
-  &:hover > span:after {
-    opacity: 1;
-  }
-  &.active {
-    font-weight: $font-weight-bold;
-  }
+.navbar-light .navbar-nav .nav-link.active {
+  font-weight: $font-weight-bold;
 }

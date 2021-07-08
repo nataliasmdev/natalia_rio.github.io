@@ -4,15 +4,15 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse offset-sm-2 col-sm-8" id="navbarSupportedContent">
-            <a class="navbar-brand" href="#">LOGO
+            <a class="navbar-brand" href="/">LOGO
                 <!--<img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24">-->
             </a>
 
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 {% for link in site.data.navigation %}
                 <li class="nav-item">
-                    <a class="nav-link {% if page.url contains link.url %}active{% endif %}" href="{{ link.url }}" {% if page.url contains link.url %}aria-current="page"{% endif %}>
-                        <span>{{ link.title }}</span>
+                    <a class="nav-link {% if page.url contains link.url %}active{% endif %}" href="{{ site.baseurl }}{{ link.url }}" {% if page.url contains link.url %}aria-current="page"{% endif %}>
+                        {{ link.title }}
                     </a>
                 </li>
                 {% endfor %}

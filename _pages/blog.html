@@ -1,12 +1,16 @@
 ---
 title: Blog
+custom_css: blog
 ---
-
-<h1 class="title-main text-center mb-5">Blog</h1>
 
 {% for post in site.posts %}
 <div class="col-sm-4">
-    <img src="{{ site.url }}/assets/images/{{ post.previewBanner }}" alt="Post banner" class="img-fluid"/>
-    <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
+    <div class="blogPost">
+        <a href="{{ post.url }}" class="link">
+            <div class="blogPost__image">
+                <img src="{{ site.url }}/assets/images/{{ post.previewBanner }}" alt="Post banner" class="img-fluid"/>
+            </div>
+            <h2><span class="link__text">{{ post.title }}</span></h2></a>
+    </div>
 </div>
 {% endfor %}

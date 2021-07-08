@@ -9,8 +9,13 @@
 </head>
 <body>
 	{% include header.html %}
-	<div class="container my-4">
-		{{ content }}
+	
+	<div class="container-fluid">
+		<div class="offset-sm-2 col-sm-8 my-4">
+			<div class="row">
+				{{ content }}
+			</div>
+		</div>
 	</div>
 </body>
 </html>

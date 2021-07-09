@@ -7,10 +7,6 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://natalia-rio.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
-# Build settings
-plugins:
-  - jekyll-feed
-
 sass:
   style: compressed
   load_paths:
@@ -34,3 +30,11 @@ defaults:
 
 include:
   - _pages
+
+languages: ["en", "ca", "es"]
+exclude_from_localizations: ["assets"]
+
+# Build settings
+plugins:
+- jekyll-feed
+- jekyll-multiple-languages-plugin

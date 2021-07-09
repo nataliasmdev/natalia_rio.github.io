@@ -13,11 +13,24 @@
 
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 {% for link in site.data.navigation %}
-                <li class="nav-item">
-                    <a class="nav-link {% if page.url contains link.url %}active{% endif %}" href="{{ link.url }}" {% if page.url contains link.url %}aria-current="page"{% endif %}>
-                        {{ link.title }}
-                    </a>
-                </li>
+                    {% if link.url == '/blog' %}
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="{{ link.url }}" id="blogDropdow" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                {{ link.title }}
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="blogDropdow">
+                                {% for category in site.categories %}
+                                    <li><a class="dropdown-item" href="{{ link.url }}/{{ category[0] }}">{{ category[0] }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    {% else %}
+                        <li class="nav-item">
+                            <a class="nav-link {% if page.url contains link.url %}active{% endif %}" href="{{ link.url }}" {% if page.url contains link.url %}aria-current="page"{% endif %}>
+                                {{ link.title }}
+                            </a>
+                        </li>
+                    {% endif %}
                 {% endfor %}
             </ul>
         </div>

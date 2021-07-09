@@ -14,7 +14,7 @@ plugins:
 sass:
   style: compressed
   load_paths:
-    - css
+    - assets/css
     - node_modules
 
 defaults:
@@ -27,9 +27,9 @@ defaults:
   values:
     permalink: /:basename
 - scope:
-    path: "_posts"
+    path: "**/_posts"
   values:
-    permalink: /blog/:slug
+    permalink: /blog/:categories/:slug
     layout:     "post"
 
 include:

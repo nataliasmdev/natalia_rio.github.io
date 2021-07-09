@@ -15,6 +15,7 @@ sass:
   style: compressed
   load_paths:
     - css
+    - node_modules
 
 defaults:
 - scope:

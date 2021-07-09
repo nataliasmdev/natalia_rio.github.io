@@ -1,5 +1,11 @@
 .bg-light {
-  background: linear-gradient(90deg, $color_body 0 50%, $color-white 50% 100%) !important;
+  background-color: $color-white !important;
+}
+
+@include media-breakpoint-up(sm) {
+  .bg-light {
+    background: linear-gradient(90deg, $color_body 0 50%, $color-white 50% 100%) !important;
+  }
 }
 
 .navbar-collapse {
@@ -16,6 +22,9 @@
 
 .navbar-light .navbar-nav .nav-item:hover {
   background-color: rgba($color-main, 0.1);
+}
+.navbar-light .navbar-toggler {
+  border: 0;
 }
 
 .navbar-light .navbar-nav .nav-link.active {

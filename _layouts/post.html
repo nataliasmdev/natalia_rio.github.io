@@ -3,7 +3,7 @@ custom_css: post
 layout: default
 ---
 
-<img src="{{ "assets/images/" | append: page.banner | prepend: site.baseurl_root }}" alt="Post banner" class="img-fluid mb-3"/>
+<img src="{{ site.url }}assets/images/{{ page.banner }}" alt="Post banner" class="img-fluid mb-3"/>
 <div class="col-sm-8">
     <h1>{{ page.title }}</h1>
     <i class="icon-calendar"></i>

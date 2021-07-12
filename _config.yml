@@ -31,10 +31,6 @@ defaults:
 include:
   - _pages
 
-languages: ["en", "ca", "es"]
-exclude_from_localizations: ["assets"]
-
 # Build settings
 plugins:
 - jekyll-feed
-- jekyll-multiple-languages-plugin

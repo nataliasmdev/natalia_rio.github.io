@@ -1,0 +1,16 @@
+.btn,
+.btn-lg {
+	border-radius: 0;
+}
+
+.btn-primary {
+	$color: $color-main;
+	background-color: $color;
+	border-color: $color;
+
+	&:hover,
+	&:active {
+		background-color: darken($color, 10%);
+		border-color: darken($color, 10%);
+	}
+}

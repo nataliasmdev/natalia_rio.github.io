@@ -4,13 +4,16 @@ custom_css: blog
 ---
 
 {% for post in site.posts %}
-<div class="col-sm-4">
+<div class="col-sm-6">
     <div class="blogPost">
+        <div class="text-center mb-2">
+            <span class="blogCategory blogCategory--{{ post.categories[0] }}"><small>{{ post.categories[0] }}</small></span>
+        </div>
         <a href="{{ post.url }}" class="link">
             <div class="blogPost__image mb-2">
                 <img src="{{ site.url }}/assets/images/{{ post.previewBanner }}" alt="Post banner" class="img-fluid"/>
             </div>
-            <h2><span class="link__text">{{ post.title }}</span></h2></a>
+            <h2 class="mt-1"><span class="link__text">{{ post.title }}</span></h2></a>
     </div>
 </div>
 {% endfor %}

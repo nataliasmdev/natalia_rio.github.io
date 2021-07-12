@@ -1,0 +1,15 @@
+.blogCategory {
+  border-radius: 4px;
+  font-weight: $font-weight-bold;
+  padding: 0 5px;
+
+  &--crochet {
+    background-color: lighten($color_cat_crochet, 18%);
+    color: $color_cat_crochet;
+  }
+
+  &--sewing {
+    background-color: lighten($color_cat_sewing, 24%);
+    color: $color_cat_sewing;
+  }
+}

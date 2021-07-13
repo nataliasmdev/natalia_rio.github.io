@@ -1,32 +1,25 @@
+.navbar .nav-item:first-child .nav-link {
+  padding-left: 0;
+}
+
+// Bootstrap Override
 .bg-light {
-  background-color: $color-white !important;
+  background-color: transparent !important;
 }
 
-@include media-breakpoint-up(sm) {
-  .bg-light {
-    background: linear-gradient(90deg, $color_body 0 50%, $color-white 50% 100%) !important;
+.navbar-light {
+  .navbar-nav {
+    .nav-link:focus,
+    .nav-link:hover,
+    .nav-link.active,
+    .show > .nav-link {
+      color: $color-main;
+    }
+    .nav-link.active {
+      font-weight: $font-weight-bold;
+    }
   }
-}
-
-.navbar-collapse {
-  background-color: $color-white;
-  position: relative;
-
-  .navbar-brand {
-    position: absolute;
-    left: 0;
-    transform: translate(-100%, 0);
-    padding-right: 3rem;
+  .navbar-toggler {
+    border: 0;
   }
-}
-
-.navbar-light .navbar-nav .nav-item:hover {
-  background-color: rgba($color-secondary, 0.1);
-}
-.navbar-light .navbar-toggler {
-  border: 0;
-}
-
-.navbar-light .navbar-nav .nav-link.active {
-  font-weight: $font-weight-bold;
 }

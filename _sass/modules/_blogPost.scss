@@ -1,0 +1,49 @@
+.blogPost {
+  // Media: image
+  &__image {
+    filter: brightness(0.9);
+    transition: all .3s ease;
+    &:hover {
+      filter: brightness(1);
+    }
+  }
+
+  // Title
+  &__title {
+    font-size: 1.5rem;
+
+    @each $name, $color in $categories {
+      @supports (mix-blend-mode: lighten) {
+        &--#{$name} {
+          display: inline-block;
+          position: relative;
+          color: #000;
+          background: #fff;
+          mix-blend-mode: multiply;
+          transition: background ease .3s;
+        }
+        &--#{$name}::before {
+          content: '';
+          mix-blend-mode: screen;
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          pointer-events: none;
+        }
+        @at-root .blogPost:hover .blogPost__title--#{$name}::before,
+        &--#{$name}:hover::before {
+          background: linear-gradient(180deg, $color 47%, darken($color, 20%) 47%, darken($color, 20%) 100%);
+        }
+      }
+      @supports not (mix-blend-mode: lighten) {
+        @at-root .blogPost:hover .blogPost__title--#{$name},
+        &--#{$name}:hover {
+          color: $color;
+        }
+      }
+    }
+  }
+}

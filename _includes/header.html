@@ -20,8 +20,8 @@
                 {% for link in site.data.navigation %}
                 {% if link.url == '/blog' %}
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle {% if page.url contains link.url %}active fw-bold{% endif %}
-                    {% if (site.data.navigation)first[title] == link.title %} ps-0 {% endif %}"
+                    <a class="nav-link mx-4 dropdown-toggle {% if page.url contains link.url %}active fw-bold{% endif %}
+                    {% if (site.data.navigation)first[title] == link.title %} ms-0 {% endif %}"
                     href="{{ link.url }}" id="blogDropdow" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
                     {{ link.title }}
@@ -36,8 +36,9 @@
                 </li>
                 {% else %}
                 <li class="nav-item">
-                    <a class="nav-link {% if page.url contains link.url %}active fw-bold{% endif %}
-                    {% if (site.data.navigation)first['title'] == link.title %} ps-0 {% endif %}"
+                    <a class="mx-4 {% if page.url contains link.url %}active fw-bold{% endif %}
+                    {% if (site.data.navigation)first['title'] == link.title %} ms-0 {% endif %}
+                    {% if (site.data.navigation)last['title'] == link.title %} btn btn-primary {% else %} nav-link {% endif %}"
                     href="{{ link.url }}"
                     {% if
                     page.url contains link.url %}aria-current="page" {% endif %}>

@@ -5,9 +5,9 @@ custom_css: blog
 
 <div class="offset-sm-2 col-sm-8 py-5">
     <h1 class="mb-5">Blog</h1>
-    <div class="row">
+    <div class="row g-5">
         {% for post in site.posts %}
-        <div class="col-sm-6 mb-5">
+        <div class="col-sm-6">
             <div class="card text-center position-relative">
                 <img src="{{ site.url }}/assets/images/{{ post.previewBanner }}" alt="{{ post.title }} - banner"
                      class="card-img-top img-fluid"/>

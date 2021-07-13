@@ -7,10 +7,10 @@
   "ascent": 850,
   "glyphs": [
     {
-      "uid": "c833c98d78cfebed5780cfaaa302a12b",
+      "uid": "413717f5ea649e8d8b93938be277264a",
       "css": "calendar",
-      "code": 59392,
-      "src": "iconic"
+      "code": 59393,
+      "src": "entypo"
     }
   ]
 }

@@ -8,17 +8,19 @@ custom_css: blog
     <div class="row">
         {% for post in site.posts %}
         <div class="col-sm-6 mb-5">
-            <div class="blogPost position-relative text-center">
-                <a href="{{ post.url }}">
-                    <img src="{{ site.url }}/assets/images/{{ post.previewBanner }}" alt="Post banner"
-                         class="blogPost__image mb-2 img-fluid"/>
-                </a>
-                <div class="position-absolute top-0 start-50 translate-middle">
-                    <span class="blogCategory blogCategory--{{ post.categories[0] }}"><small>{{ post.categories[0] }}</small></span>
+            <div class="card text-center position-relative">
+                <img src="{{ site.url }}/assets/images/{{ post.previewBanner }}" alt="{{ post.title }} - banner"
+                     class="card-img-top img-fluid"/>
+                <span class="position-absolute top-0 start-50 translate-middle blogCategory blogCategory--{{ post.categories[0] }}"><small>{{ post.categories[0] }}</small></span>
+                <div class="card-body">
+                    <h2 class="card-title">{{ post.title }}</h2>
+                    {% if post.subtitle %}
+                        <p>{{ post.subtitle }}</p>
+                    {% else %}
+                        <p>{{ post.excerpt }}...</p>
+                    {% endif %}
+                    <a href="{{ post.url }}" class="btn btn-primary">Read more</a>
                 </div>
-                <a href="{{ post.url }}">
-                    <h2 class="blogPost__title blogPost__title--{{ post.categories[0] }} mt-1">{{ post.title }}</h2>
-                </a>
             </div>
         </div>
         {% endfor %}

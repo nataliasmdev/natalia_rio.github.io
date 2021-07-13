@@ -1,14 +1,40 @@
+$border-width: 0;
+$border-radius: 1rem;
+
+// === Body === //
+$body-bg: lighten($color-white, 8%);
+
+
+// === Buttons === //
+$btn-border-radius: 0;
+
+
+// === Cards === //
+$card-border-width: 0;
+
+
+// === Colors === //
+$primary: $color-secondary;
+
+
 // === Fonts === //
-$font-family-base: $font-family_body, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-weight-base: $font-weight_body-normal;
-$font-weight-bold: $font-weight_body-bold;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+$font-family-base: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-weight-normal: 300;
+$font-weight-bold: 500;
+
+
+// === Links === //
+$link-decoration: none;
+$link-color: $color-main;
+
 
 // === Navbar === //
 // Padding
 $navbar-padding-x: 0;
 $navbar-padding-y: 0;
-// Items padding
+// Padding: Items
 $navbar-nav-link-padding-x: 2rem;
 $nav-link-padding-y: 1.5rem;
-// Logo margin
-$navbar-brand-margin-end: 0;
+// Colors
+$navbar-light-hover-color: $color-main;

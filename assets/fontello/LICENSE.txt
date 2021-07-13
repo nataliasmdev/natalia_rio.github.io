@@ -1,12 +1,12 @@
 Font license info
 
 
-## Iconic
+## Entypo
 
-   Copyright (C) 2012 by P.J. Onori
+   Copyright (C) 2012 by Daniel Bruce
 
-   Author:    P.J. Onori
+   Author:    Daniel Bruce
    License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://somerandomdude.com/work/iconic/
+   Homepage:  http://www.entypo.com
 
 

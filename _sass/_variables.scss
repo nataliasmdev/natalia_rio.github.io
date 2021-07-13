@@ -1,19 +1,10 @@
 // === Colors === //
-$color-main: #DE9010;
-$color-secondary: #4CB594;
+$color-main: #e69138;
+$color-secondary: #0A8185;
 $color-white: #eceae3;
-
-$color-body: lighten($color-white, 8%);
 
 // Categories
 $categories: (
         crochet: #ff8cb9,
         sewing: #FFB18B
 );
-
-// === Fonts === //
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
-
-$font-family_body: "Poppins", sans-serif;
-$font-weight_body-normal: 300;
-$font-weight_body-bold: 500;
